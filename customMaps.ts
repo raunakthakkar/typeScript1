@@ -14,6 +14,6 @@ export class CustomMap{
             const map=new google.maps.Map(document.getElementById('map')as HTMLElement,{center:{lat:0,lng:0},zoom:1})})
     }
     addMarker(mappable:Mappable){
-        const marker=new  google.maps.Marker({map:this.googleMap,position:{lat:mappable.location.lat,lng:mappable.location.lng}})
+        const marker=new google.maps.Marker({map:this.googleMap,position:{lat:mappable.location.lat,lng:mappable.location.lng}})
     }
 }

@@ -100432,7 +100432,7 @@ function () {
   function User() {
     this.location = {
       lat: parseFloat(faker_1.default.address.latitude()),
-      long: parseFloat(faker_1.default.address.longitude())
+      lng: parseFloat(faker_1.default.address.longitude())
     };
   }
 
@@ -100869,7 +100869,9 @@ var user = new Users_1.User();
 console.log(user);
 var comp = new company_1.Company();
 console.log(comp);
-new customMaps_1.CustomMap();
+var myMap = new customMaps_1.CustomMap();
+myMap.addMarker(user);
+myMap.addMarker(comp);
 },{"./Users":"Users.ts","./company":"company.ts","./customMaps":"customMaps.ts"}],"C:/Users/Raunak Thakkar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

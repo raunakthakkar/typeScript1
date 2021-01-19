@@ -6,4 +6,8 @@ let user=new User;
 console.log(user)
 let comp= new Company()
 console.log(comp)
-new CustomMap();
+const myMap=new CustomMap();
+myMap.addMarker(user);
+myMap.addMarker(comp)
+
+
